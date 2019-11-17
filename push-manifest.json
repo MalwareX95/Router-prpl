@@ -1,0 +1,34 @@
+{
+    "/": {
+      "src/routing.js": {
+        "crossorigin": "anonymous",
+        "type": "script",
+        "weight": 1
+        },
+      "src/my-app.js": {
+        "crossorigin": "anonymous",
+        "type": "script",
+        "weight": 1
+      },
+      "node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js": {
+        "type": "script",
+        "weight": 1
+      }
+    },
+    "/use": {
+      "src/routing.js": {
+        "crossorigin": "anonymous",
+        "type": "script",
+        "weight": 1
+      },
+      "src/page1.js": {
+        "crossorigin": "anonymous",
+        "type": "script",
+        "weight": 1
+      },
+      "node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js": {
+        "type": "script",
+        "weight": 1
+      }
+    }
+}
