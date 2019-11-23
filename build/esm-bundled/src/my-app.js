@@ -1,6 +1,0 @@
-import{LitElement,html,property,customElement}from"./routing.js";var __decorate=void 0||function(decorators,target,key,desc){var c=arguments.length,r=3>c?target:null===desc?desc=Object.getOwnPropertyDescriptor(target,key):desc,d;if("object"===typeof Reflect&&"function"===typeof Reflect.decorate)r=Reflect.decorate(decorators,target,key,desc);else for(var i=decorators.length-1;0<=i;i--)if(d=decorators[i])r=(3>c?d(r):3<c?d(target,key,r):d(target,key))||r;return 3<c&&r&&Object.defineProperty(target,key,r),r},__metadata=void 0||function(k,v){if("object"===typeof Reflect&&"function"===typeof Reflect.metadata)return Reflect.metadata(k,v)};let HomeComponent=class HomeComponent extends LitElement{constructor(){super(...arguments);this._text=""}_onInputChange(e){this._text=e.target.value}render(){return html`
-            <h1>Home</h1>
-            <!-- <input value="${this._text}" @change="${this._onInputChange}" type="text">
-            <h1>my-app</h1>
-            <div>${this._text}</div> -->
-        `}};__decorate([property({type:String}),__metadata("design:type",String)],HomeComponent.prototype,"_text",void 0);HomeComponent=__decorate([customElement("my-app")],HomeComponent);

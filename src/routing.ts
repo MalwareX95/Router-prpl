@@ -1,19 +1,19 @@
 import {Router} from '@vaadin/router';
-const router = new Router(document.getElementById('outlet'));
+const router = new Router(document.getElementById('outlet'), {baseUrl: '/'});
 
 router.setRoutes([
     {
         path: '/',
-        component: 'my-app',
+        component: 'home-view',
         action: () => { 
-            import('./my-app')
+            import('./components/home')
         }
     },
     {
-        path: '/use',
-        component: 'page1-component',
+        path: '/contact',
+        component: 'contact-view',
         action: () => { 
-            import('./page1')
+            import('./components/contact')
         }
     }
 ]);
