@@ -1,8 +1,6 @@
 import { Reducer } from 'redux'
 import { RootAction } from '../store';
 import { INCREMENT, DECREMENT } from '../actions/app';
-// import * as AppAction from '../actions/app'
-
 
 export interface CounterState {
     clicks: number;
@@ -26,10 +24,11 @@ const counter: Reducer<CounterState, RootAction> = (state = INITIAL_STATE, actio
                 clicks: state.clicks - 1,
                 value: state.value - 1
             }
+        default:
+            return state
     }
-    return state
 }
 
-export default counter;
+export default counter
 
 // const app: Reducer<AppState,  

@@ -5,12 +5,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 import { LitElement, html, customElement } from 'lit-element';
+import { store } from '../store';
+import { decrement, fetchToDos } from '../actions/app';
 let CounterComponent = class CounterComponent extends LitElement {
     _increment() {
-        // store.dispatch(increment())
+        store.dispatch(fetchToDos());
     }
     _decrement() {
-        // store.dispatch(decrement())
+        store.dispatch(decrement());
     }
     render() {
         return html `

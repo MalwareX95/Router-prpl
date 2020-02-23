@@ -15,8 +15,9 @@ const counter = (state = INITIAL_STATE, action) => {
                 clicks: state.clicks - 1,
                 value: state.value - 1
             };
+        default:
+            return state;
     }
-    return state;
 };
 export default counter;
 // const app: Reducer<AppState,  

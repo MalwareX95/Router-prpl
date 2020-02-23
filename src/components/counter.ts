@@ -1,16 +1,17 @@
 import {LitElement, html, customElement} from 'lit-element'
 import { store } from '../store'
-import { increment, decrement } from '../actions/app'
+import { increment, decrement,fetchToDos } from '../actions/app'
 
 @customElement('app-counter')
 export class CounterComponent extends LitElement{
     _increment(){
-        // store.dispatch(increment())
+        store.dispatch(fetchToDos())
     }
 
     _decrement(){
-        // store.dispatch(decrement())
+        store.dispatch(decrement())
     }
+
 
     render(){
         return html`
